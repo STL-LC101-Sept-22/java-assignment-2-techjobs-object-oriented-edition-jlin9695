@@ -33,9 +33,9 @@ public class JobTest {
         assertTrue(job1.getEmployer() instanceof Employer);
         assertEquals(job1.getName(),"Product tester");
         assertEquals(job1.getEmployer().getName(),"ACME");
-        assertEquals(job1.getLocation().getValue(),"Desert");
-        assertEquals(job1.getPositionType().getValue(),"Quality control");
-        assertEquals(job1.getCoreCompetency().getValue(),"Persistence");
+        assertEquals(job1.getLocation().getName(),"Desert");
+        assertEquals(job1.getPositionType().getName(),"Quality control");
+        assertEquals(job1.getCoreCompetency().getName(),"Persistence");
     }
 
     @Test
@@ -93,11 +93,11 @@ public class JobTest {
         assertEquals(description.charAt(113),'D');
     }
 
-    /*@Test
+    @Test
     public void testToStringHandlesAllEmptyFields(){
         Job job1 = new Job();
         String description = job1.toString();
         //System.out.println(description.indexOf("Data not available"));
         assertEquals(description,"OOPS! This job does not seem to exist.");
-    }*/
+    }
 }

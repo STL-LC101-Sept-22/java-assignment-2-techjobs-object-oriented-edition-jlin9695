@@ -36,12 +36,12 @@ public class Job {
 
     @Override
     public String toString(){
-        /*if (this.getName() == null && this.getEmployer().toString() == null
-                && this.getLocation().toString() == null &&
-                this.getPositionType().toString() == null &&
-                this.getCoreCompetency().toString() == null){
+        if (this.getName() == null && this.getEmployer() == null
+                && this.getLocation() == null &&
+                this.getPositionType() == null &&
+                this.getCoreCompetency() == null){
            return "OOPS! This job does not seem to exist.";
-        }*/
+        }
         String description = "\nID: " + this.getId() + "\n" +
                 "\nName: " + this.getName() + "\n" +
                 "\nEmployer: " + this.getEmployer().toString() + "\n" +
