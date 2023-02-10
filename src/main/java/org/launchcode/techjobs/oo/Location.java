@@ -24,6 +24,9 @@ public class Location {
 
     @Override
     public String toString() {
+        if (value == null){
+            return "Data not available";
+        }
         return value;
     }
 

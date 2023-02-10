@@ -35,6 +35,23 @@ public class Job {
     //  match.
 
     @Override
+    public String toString(){
+        /*if (this.getName() == null && this.getEmployer().toString() == null
+                && this.getLocation().toString() == null &&
+                this.getPositionType().toString() == null &&
+                this.getCoreCompetency().toString() == null){
+           return "OOPS! This job does not seem to exist.";
+        }*/
+        String description = "\nID: " + this.getId() + "\n" +
+                "\nName: " + this.getName() + "\n" +
+                "\nEmployer: " + this.getEmployer().toString() + "\n" +
+                "\nLocation: " + this.getLocation().toString() + "\n" +
+                "\nPosition Type: " + this.getPositionType().toString() + "\n" +
+                "\nCore Competency: " + this.getCoreCompetency().toString() + "\n";
+        return description;
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
